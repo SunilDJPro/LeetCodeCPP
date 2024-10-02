@@ -25,17 +25,17 @@ int main() {
     // Test case 1
     std::vector<int> nums1 = {1, 1, 2};
     bool result1 = xorgame.xorGame(nums1);
-    std::cout << "Test case 1: " << (result1 ? "Alice wins" : "Alice loses") << std::endl; // Expected: Alice loses (false)
+    std::cout << "Test case 1: " << (result1 ? "Alice wins" : "Alice loses") << std::endl;
 
     // Test case 2
     std::vector<int> nums2 = {0, 1};
     bool result2 = xorgame.xorGame(nums2);
-    std::cout << "Test case 2: " << (result2 ? "Alice wins" : "Alice loses") << std::endl; // Expected: Alice wins (true)
+    std::cout << "Test case 2: " << (result2 ? "Alice wins" : "Alice loses") << std::endl;
 
     // Test case 3
     std::vector<int> nums3 = {1, 2, 3};
     bool result3 = xorgame.xorGame(nums3);
-    std::cout << "Test case 3: " << (result3 ? "Alice wins" : "Alice loses") << std::endl; // Expected: Alice wins (true)
+    std::cout << "Test case 3: " << (result3 ? "Alice wins" : "Alice loses") << std::endl;
 
     return 0;
 }
