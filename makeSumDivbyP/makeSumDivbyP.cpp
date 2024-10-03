@@ -33,7 +33,8 @@ public:
             if (modMap.find(neededMod) != modMap.end()) {
                 minLength = min(minLength, i - modMap[neededMod]);
             }
-        modMap[currentMod] = i;
+
+        modMap[currentMod] = i; //Stores the last index of the current Mod
            
         }
 
