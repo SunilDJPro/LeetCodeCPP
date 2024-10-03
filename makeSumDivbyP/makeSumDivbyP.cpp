@@ -47,7 +47,7 @@ auto tester(vector<int>& nums, int p) -> void {
 
     Solution soln;
 
-    cout << "Target divisility value is: " << p <<endl;
+    cout << "Target divisility Modulo is: " << p <<endl;
     cout << "Size of the array is: " << nums.size() << endl;
     cout << "Elements of the array are: ";
     for_each(nums.begin(), nums.end(), [](int x){cout << x << " ";});
