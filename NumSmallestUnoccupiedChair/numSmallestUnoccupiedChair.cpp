@@ -14,8 +14,8 @@ public:
 
         for (int i = 0; i < n; i++) {
             events.push_back({times[i][0], i}); //arrival time
-            events.push_back({times[i][1], ~i}); //depart time, using bitwise complement fot leaving
-        }
+            events.push_back({times[i][1], ~i}); //depart time, using bitwise complement for leaving (negative)        
+            }
 
         sort(events.begin(), events.end()); //sort events by time
 
@@ -41,7 +41,7 @@ public:
                 }
 
             } else {
-                friendID = ~friendID;
+                friendID = ~friendID; 
                 freeChairs.push(occupiedChair[friendID]);
             }
         }
